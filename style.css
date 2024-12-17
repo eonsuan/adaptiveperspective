@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0; 
+  padding: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#container {
+  position: relative;
+  width: 100vw; 
+  height: 100vh;
+  perspective: 1000px;
+}
+
+
+.image {
+  position: absolute;
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+
+#image7 { /*전시기간*/
+  top: -8%; 
+  left: -2%; 
+}
+
+#image6 { /*작가소개*/
+  top: 4%;
+  left: 1%;
+}
+
+#image2 { /*전시설명*/
+  top: 25%;
+  left: 1%; 
+}
+
+#image1 { /*기획의글*/
+  top: -1%;
+  left: 29%;
+}
+
+#image4 { /*사운드창작*/
+  top: 70%;
+  left: 0%;
+}
+
+#image5 { /*스크리닝*/
+  top: 53%;
+  left: -2%;
+}
+
+#image3 { /*작품*/
+  top: 32%;
+  left: 60%;
+}
+
+#image8 { /*지도*/
+  top: -1%;
+  left: 58%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+#container {
+  position: relative; 
+  width: 100%;
+  height: 100vh;
+  perspective: 1000px; 
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: -240px;
+  transform: translateY(-50%);
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control:hover {
+  opacity: 1;
+}
+
+.control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70vh;
+  height: 7px;
+  background: linear-gradient(to left, #ddd 0%, #000 0%);
+  transform: rotate(-90deg); 
+  transform-origin: center center; 
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.control input[type="range"]:focus {
+  outline: none;
+}
+
+.control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px; 
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.control input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
